@@ -9,106 +9,83 @@ void Balling();
 void Both();
 void About();
 
-
 void Batting_over();
 void Balling_over1();
 void Both_over1();
-
 
 /* **************************************** */
 /*               Home Section               */
 /* **************************************** */
 int main(){
-
-   int n;
-
-   printf("\n\n\n");
-   printf("\n\t\t======================================================================================================================");
-   printf("\n\t\t|                                                                                                                    |");
-   printf("\n\t\t|                                                   CRICKET GAME                                                     |");
-   printf("\n\t\t|                                                                                                                    |");
-   printf("\n\t\t======================================================================================================================");
-   printf("\n\t\t----------------------------------------------------------------------------------------------------------------------");
-   printf("\n\t\t|                                            |                                                                       |");
-   printf("\n\t\t|                                            |                   **************************************              |");
-   printf("\n\t\t|                                            |                  *                                      *             |");
-   printf("\n\t\t|                                            |                *     +                                    *           |");
-   printf("\n\t\t|      -------------------------             |               *                                             *         |");
-   printf("\n\t\t|      |      1. Start Game    |             |              *                +   +          +               *        |");
-   printf("\n\t\t|      -------------------------             |             *                      __                         *       |");
-   printf("\n\t\t|                                            |            *              +   ----| *|----  (-)                *      |");
-   printf("\n\t\t|      -------------------------             |            *                      |  |                    +    *      |");
-   printf("\n\t\t|      |      2. About !       |             |            *              +       |  |                         *      |");
-   printf("\n\t\t|      -------------------------             |            *                      |  |        +                *      |");
-   printf("\n\t\t|                                            |            *                  ----|__|*---                     *      |");
-   printf("\n\t\t|      -------------------------             |            *                 +     (-)     +                   *      |");
-   printf("\n\t\t|      |      0. Exit          |             |             *                                                 *       |");
-   printf("\n\t\t|      -------------------------             |              *                     +                         *        |");
-   printf("\n\t\t|                                            |               *                                             *         |");
-   printf("\n\t\t|                                            |                *                                           *          |");
-   printf("\n\t\t|                                            |                  *                                       *            |");
-   printf("\n\t\t|                                            |                    *************************************              |");
-   printf("\n\t\t|                                            |                                                                       |");
-   printf("\n\t\t----------------------------------------------------------------------------------------------------------------------\n");
-
+    int n;
+    printf("\n\n\n");
+    printf("\n\t\t======================================================================================================================");
+    printf("\n\t\t|                                                                                                                    |");
+    printf("\n\t\t|                                                   CRICKET GAME                                                     |");
+    printf("\n\t\t|                                                                                                                    |");
+    printf("\n\t\t======================================================================================================================");
+    printf("\n\t\t----------------------------------------------------------------------------------------------------------------------");
+    printf("\n\t\t|                                            |                                                                       |");
+    printf("\n\t\t|                                            |                   **************************************              |");
+    printf("\n\t\t|                                            |                  *                                      *             |");
+    printf("\n\t\t|                                            |                *     +                                    *           |");
+    printf("\n\t\t|      -------------------------             |               *                                             *         |");
+    printf("\n\t\t|      |      1. Start Game    |             |              *                +   +          +               *        |");
+    printf("\n\t\t|      -------------------------             |             *                      __                         *       |");
+    printf("\n\t\t|                                            |            *              +   ----| *|----  (-)                *      |");
+    printf("\n\t\t|      -------------------------             |            *                      |  |                    +    *      |");
+    printf("\n\t\t|      |      2. About !       |             |            *              +       |  |                         *      |");
+    printf("\n\t\t|      -------------------------             |            *                      |  |        +                *      |");
+    printf("\n\t\t|                                            |            *                  ----|__|*---                     *      |");
+    printf("\n\t\t|      -------------------------             |            *                 +     (-)     +                   *      |");
+    printf("\n\t\t|      |      0. Exit          |             |             *                                                 *       |");
+    printf("\n\t\t|      -------------------------             |              *                     +                         *        |");
+    printf("\n\t\t|                                            |               *                                             *         |");
+    printf("\n\t\t|                                            |                *                                           *          |");
+    printf("\n\t\t|                                            |                  *                                       *            |");
+    printf("\n\t\t|                                            |                    *************************************              |");
+    printf("\n\t\t|                                            |                                                                       |");
+    printf("\n\t\t----------------------------------------------------------------------------------------------------------------------\n");
     printf("\n\t\tChoice Your Options[1,2,0] : ");
     scanf("%d",&n);
-       switch(n)
-
-    {
-
-
-    case 1:
-        system("cls");
-        Start_Game();
-        break;
+    switch(n){
+        case 1:
+            system("cls");
+            Start_Game();
+            break;
 
         case 2:
-        system("cls");
-        About();
-        break;
+            system("cls");
+            About();
+            break;
 
+        case 0:
+            system("cls");
+            printf("\n\n\t\t----------------------------------------");
+            printf("\n\t\t|  Thank You Playing For Cricket Games | ");
+            printf("\n\t\t|--------------------------------------|");
+            getch();
+            break;
 
-    case 0:
-    system("cls");
-        printf("\n\n\t\t----------------------------------------");
-        printf("\n\t\t|  Thank You Playing For Cricket Games | ");
-        printf("\n\t\t|--------------------------------------|");
-        getch();
-        break;
-
-
-
-    default:
-    system("cls");
-        printf("\n\t\t\t-----------------------------");
-        printf("\n\t\t\t You Entered Worng Choice...");
-        printf("\n\t\t\t     Please Try Again ");
-        printf("\n\t\t\t-----------------------------\n\n");
-
-        break;
-
+        default:
+            system("cls");
+            printf("\n\t\t\t-----------------------------");
+            printf("\n\t\t\t You Entered Wrong Choice...");
+            printf("\n\t\t\t     Please Try Again ");
+            printf("\n\t\t\t-----------------------------\n\n");
+            break;
     }
-
 }
-
-
-
-
-
 /* **************************************** */
 /*               Menu Section               */
 /* **************************************** */
-void Start_Game()
-{
+void Start_Game(){
     int n;
-
     printf("\n\t\t\t\t*******************************************************************\n");
     printf("\t\t\t\t*                                                                 *\n");
     printf("\t\t\t\t*                             CRICKET GAME                        *\n");
     printf("\t\t\t\t*                                                                 *\n");
     printf("\t\t\t\t*******************************************************************\n\n");
-
     printf("\t\t\t\t-----------------------------------\n");
     printf("\t\t\t\t| [1]. Batting Challenge          |\n");
     printf("\t\t\t\t|---------------------------------|\n");
@@ -119,62 +96,46 @@ void Start_Game()
     printf("\t\t\t\t| [4]. Back      | [0]. Exit      |\n");
     printf("\t\t\t\t-----------------------------------\n");
     printf("\n\t\t\t\tChoice Your Options[1,2,3,4,0] : ");
-     scanf("%d",&n);
-       switch(n)
-
-    {
-
-
+    scanf("%d",&n);
+    switch(n){
         case 1:
-        system("cls");
-        Batting();
-        break;
+            system("cls");
+            Batting();
+            break;
 
         case 2:
-        system("cls");
-        Balling();
-        break;
+            system("cls");
+            Balling();
+            break;
 
         case 3:
-        system("cls");
-        Both();
-        break;
+            system("cls");
+            Both();
+            break;
 
          case 4:
-        system("cls");
-        main();
-        break;
+            system("cls");
+            main();
+            break;
 
-    case 0:
-    system("cls");
-        printf("\n\n\t\t----------------------------------------");
-        printf("\n\t\t|  Thank You Playing For Cricket Games | ");
-        printf("\n\t\t|--------------------------------------|");
-        getch();
-        break;
+        case 0:
+            system("cls");
+            printf("\n\n\t\t----------------------------------------");
+            printf("\n\t\t|  Thank You Playing For Cricket Games | ");
+            printf("\n\t\t|--------------------------------------|");
+            getch();
+            break;
 
-
-
-    default:
-    system("cls");
-        printf("\n\t\t\t-----------------------------");
-        printf("\n\t\t\t You Entered Worng Choice...");
-        printf("\n\t\t\t     Please Try Again ");
-        printf("\n\t\t\t-----------------------------\n\n");
-        Start_Game();
-        break;
-
+        default:
+            system("cls");
+            printf("\n\t\t\t-----------------------------");
+            printf("\n\t\t\t You Entered Wrong Choice...");
+            printf("\n\t\t\t     Please Try Again ");
+            printf("\n\t\t\t-----------------------------\n\n");
+            Start_Game();
+            break;
     }
-
-
-
 }
-
-
-
-
-
-
 /* **************************************** */
 /*               About Section              */
 /* **************************************** */
@@ -189,12 +150,12 @@ void About(){
     printf("\t\t\t\t*******************************************************************\n");
     printf("\t\t\t\t**            Developer : MD. RAKIBUL ISLAM                      **\n");
     printf("\t\t\t\t**            Build     : 06-01-2018                             **\n");
-    printf("\t\t\t\t**            email     : rakibulislam667s@gmail.com             **\n");
+    printf("\t\t\t\t**            email     : md.rakibulislam_1@yahoo.com            **\n");
     printf("\t\t\t\t*******************************************************************\n\n");
     printf("\t\t\t\t*******************************************************************\n");
     printf("\t\t\t\t**                [1]. Back      |      [0]. Exit                **\n");
     printf("\t\t\t\t*******************************************************************\n");
-     printf("\n\t\t\t\tChoice Your Options[1,0] : ");
+    printf("\n\t\t\t\tChoice Your Options[1,0] : ");
     scanf("%d",&n);
        switch(n){
         case 1:
@@ -213,23 +174,13 @@ void About(){
       default:
             system("cls");
             printf("\n\t\t\t\t-----------------------------");
-            printf("\n\t\t\t\t You Entered Worng Choice...");
+            printf("\n\t\t\t\t You Entered Wrong Choice...");
             printf("\n\t\t\t\t     Please Try Again ");
             printf("\n\t\t\t\t-----------------------------\n\n");
             About();
             break;
-
     }
-
-
 }
-
-
-
-
-
-
-
 /* **************************************** */
 /*               Batting Part                */
 /* **************************************** */
@@ -241,7 +192,6 @@ void Batting()
     printf("\t\t\t\t*                         Batting Challenge                       *\n");
     printf("\t\t\t\t*                                                                 *\n");
     printf("\t\t\t\t*******************************************************************\n\n");
-
     printf("\t\t\t\t-----------------------------------\n");
     printf("\t\t\t\t| [1]. PowerPlay                  |\n");
     printf("\t\t\t\t|---------------------------------|\n");
@@ -256,67 +206,59 @@ void Batting()
     printf("\t\t\t\t| [6]. Home       | [0]. Exit     |\n");
     printf("\t\t\t\t-----------------------------------\n");
     printf("\n\t\t\t\tChoice Your Options[1,2,3,4,5,6,0] : ");
-     scanf("%d",&n);
-       switch(n)
-
-    {
-
-
+    scanf("%d",&n);
+    switch(n){
         case 1:
-        system("cls");
-        Batting_over(6);
-        break;
+            system("cls");
+            Batting_over(6);
+            break;
 
         case 2:
-        system("cls");
-        Batting_over(12);
-        break;
+            system("cls");
+            Batting_over(12);
+            break;
 
         case 3:
-        system("cls");
-        Batting_over(18);
-        break;
+            system("cls");
+            Batting_over(18);
+            break;
 
         case 4:
-        system("cls");
-        Batting_over(30);
-        break;
+            system("cls");
+            Batting_over(30);
+            break;
 
         case 5:
-        system("cls");
-        Start_Game();
-        break;
+            system("cls");
+            Start_Game();
+            break;
 
         case 6:
-        system("cls");
-        main();
-        break;
+            system("cls");
+            main();
+            break;
 
+        case 0:
+            system("cls");
+            printf("\n\n\t\t----------------------------------------");
+            printf("\n\t\t|  Thank You Playing For Cricket Games | ");
+            printf("\n\t\t|--------------------------------------|");
+            getch();
+            break;
 
-
-    case 0:
-    system("cls");
-        printf("\n\n\t\t----------------------------------------");
-        printf("\n\t\t|  Thank You Playing For Cricket Games | ");
-        printf("\n\t\t|--------------------------------------|");
-        getch();
-        break;
-
-
-
-    default:
-    system("cls");
-        printf("\n\t\t\t-----------------------------");
-        printf("\n\t\t\t You Entered Worng Choice...");
-        printf("\n\t\t\t     Please Try Again ");
-        printf("\n\t\t\t-----------------------------\n\n");
-        Batting();
-        break;
-
+        default:
+            system("cls");
+            printf("\n\t\t\t-----------------------------");
+            printf("\n\t\t\t You Entered Wrong Choice...");
+            printf("\n\t\t\t     Please Try Again ");
+            printf("\n\t\t\t-----------------------------\n\n");
+            Batting();
+            break;
     }
 }
-
-
+/* **************************************** */
+/*              Batting Part                */
+/* **************************************** */
 void Batting_over(int balls){
     int i,j,k,over=0,over1,r,n,n1,n2=0,R,count=0,sum=0,b1=0,b2,b3,b4,b5,b6,s2,s3,s4,s5,s6;
     int a1,a2,a3,a4,a5,a6;
@@ -340,16 +282,12 @@ void Batting_over(int balls){
     scanf("%s",&T1);
     printf("\n\t\tEnter Opposition Team name(Ex:-Abc) : ");
     scanf("%s",&T2);
-
     system("cls");
     printf("\n\t\t*******************************************************************\n");
     printf("\t\t*                                                                 *\n");
     printf("\t\t*                            %s VS %s                           *\n",T1,T2);
     printf("\t\t*                                                                 *\n");
     printf("\t\t*******************************************************************\n\n");
-
-
-
     srand(time(NULL));
     if(balls<=6){
         r=rand()%10+8;
@@ -370,12 +308,10 @@ void Batting_over(int balls){
     printf("\n\t\t-------------------------------------------------------------------");
     printf("\n\t\t                       %s Need %d Runs in %d Over                 ",T1,R,over1);
     printf("\n\t\t-------------------------------------------------------------------\n\n");
-
     for(i=1;i<=balls;i++){
         printf("\n\t\t%d Ball (Hit The Ball). . .\n\t\t",i);
         system("pause");
         a1=rand()%10;
-
         if(a1==0){
             r1=0;
         }
@@ -432,84 +368,76 @@ void Batting_over(int balls){
             r1=rand()%4;
         }
         printf("\n\t\t%d Ball : %d run",i,r1);
-
         b1=b1+r1;
         printf("\n\t\t%s Total %d runs\n\n",T1,b1);
-
         if(b1>=R){
-              printf("\n\n\n\n\n\n");
-              printf("\n\t\t*************************************");
-              printf("\n\t\t          %s Won The Match ",T1);
-              printf("\n\t\t*************************************\n\n\n");
-               printf("\t\t---------------------------------------------------\n");
-          printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
-          printf("\t\t---------------------------------------------------\n");
-           int pl;
-           printf("\t\tChoice Your Options[1,2,0] : ");
-           scanf("%d",&pl);
-           switch(pl){
-
-
+            printf("\n\n\n\n\n\n");
+            printf("\n\t\t*************************************");
+            printf("\n\t\t          %s Won The Match ",T1);
+            printf("\n\t\t*************************************\n\n\n");
+            printf("\t\t---------------------------------------------------\n");
+            printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
+            printf("\t\t---------------------------------------------------\n");
+            int pl;
+            printf("\t\tChoice Your Options[1,2,0] : ");
+            scanf("%d",&pl);
+            switch(pl){
                 case 1:
-                system("cls");
-                main();
-                break;
+                    system("cls");
+                    main();
+                    break;
 
                 case 2:
-                system("cls");
-                Batting_over(balls);
-                break;
-
+                    system("cls");
+                    Batting_over(balls);
+                    break;
 
                 case 0:
-                system("cls");
-                printf("\n\n\t\t----------------------------------------");
-                printf("\n\t\t|  Thank You Playing For Cricket Games | ");
-                printf("\n\t\t|--------------------------------------|");
-                getch();
-                break;
-
-
+                    system("cls");
+                    printf("\n\n\t\t----------------------------------------");
+                    printf("\n\t\t|  Thank You Playing For Cricket Games | ");
+                    printf("\n\t\t|--------------------------------------|");
+                    getch();
+                    break;
 
                 default:
-                system("cls");
-                printf("\n\t\t-----------------------------");
-                printf("\n\t\t You Entered Worng Choice...");
-                printf("\n\t\t    Please Try Again ");
-                printf("\n\t\t-----------------------------\n\n");
-                system("pause");
-                main();
-                break;
-
-           }
-          break;
+                    system("cls");
+                    printf("\n\t\t-----------------------------");
+                    printf("\n\t\t You Entered Wrong Choice...");
+                    printf("\n\t\t    Please Try Again ");
+                    printf("\n\t\t-----------------------------\n\n");
+                    system("pause");
+                    main();
+                    break;
+            }
+            break;
         }
         if(balls==12){
             if(i==6){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             1st over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t    %s need %d runs of 6 balls",T1,R-b1);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             1st over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t    %s need %d runs of 6 balls",T1,R-b1);
+                printf("\n\t\t*************************************\n\n");
             }
         }
         if(balls==18){
             if(i==6){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             1st over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t    %s need %d runs of 12 balls",T1,R-b1);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             1st over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t    %s need %d runs of 12 balls",T1,R-b1);
+                printf("\n\t\t*************************************\n\n");
             }else if(i==12){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             2nd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t    %s need %d runs of 6 balls",T1,R-b1);
-                  printf("\n\t\t*************************************\n\n");
-             }
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             2nd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t    %s need %d runs of 6 balls",T1,R-b1);
+                printf("\n\t\t*************************************\n\n");
+            }
         }
         if(balls==30){
             if(i==6){
@@ -520,29 +448,28 @@ void Batting_over(int balls){
                 printf("\n\t\t    %s need %d runs of 24 balls",T1,R-b1);
                 printf("\n\t\t*************************************\n\n");
              }else if(i==12){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             2nd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t    %s need %d runs of 18 balls",T1,R-b1);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             2nd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t    %s need %d runs of 18 balls",T1,R-b1);
+                printf("\n\t\t*************************************\n\n");
              }else if(i==18){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             3rd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t    %s need %d runs of 12 balls",T1,R-b1);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             3rd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t    %s need %d runs of 12 balls",T1,R-b1);
+                printf("\n\t\t*************************************\n\n");
              }else if(i==24){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             4th over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t    %s need %d runs of 6 balls",T1,R-b1);;
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             4th over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t    %s need %d runs of 6 balls",T1,R-b1);;
+                printf("\n\t\t*************************************\n\n");
               }
          }
-
     }
     printf("\n\n\n\n\n\n");
     while(b1==r){
@@ -556,67 +483,59 @@ void Batting_over(int balls){
            printf("\t\tChoice Your Options[1,2,0] : ");
            scanf("%d",&pl);
            switch(pl){
-
-
                 case 1:
-                system("cls");
-                main();
-                break;
+                    system("cls");
+                    main();
+                    break;
 
                 case 2:
-                system("cls");
-                Batting_over(balls);
-                break;
-
+                    system("cls");
+                    Batting_over(balls);
+                    break;
 
                 case 0:
-                system("cls");
-                printf("\n\n\t\t----------------------------------------");
-                printf("\n\t\t|  Thank You Playing For Cricket Games | ");
-                printf("\n\t\t|--------------------------------------|");
-                getch();
-                break;
-
-
+                    system("cls");
+                    printf("\n\n\t\t----------------------------------------");
+                    printf("\n\t\t|  Thank You Playing For Cricket Games | ");
+                    printf("\n\t\t|--------------------------------------|");
+                    getch();
+                    break;
 
                 default:
-                system("cls");
-                printf("\n\t\t-----------------------------");
-                printf("\n\t\t You Entered Worng Choice...");
-                printf("\n\t\t    Please Try Again ");
-                printf("\n\t\t-----------------------------\n\n");
-                system("pause");
-                main();
-                break;
-
-           }
-          break;
+                    system("cls");
+                    printf("\n\t\t-----------------------------");
+                    printf("\n\t\t You Entered Wrong Choice...");
+                    printf("\n\t\t    Please Try Again ");
+                    printf("\n\t\t-----------------------------\n\n");
+                    system("pause");
+                    main();
+                    break;
+            }
+        break;
     }
     while(b1<R){
-          printf("\n\t\t*************************************");
-          printf("\n\t\t            %s Lost The Match ",T1);
-          printf("\n\t\t*************************************\n\n\n");
-           printf("\t\t---------------------------------------------------\n");
-          printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
-          printf("\t\t---------------------------------------------------\n");
-           int pl;
-           printf("\t\tChoice Your Options[1,2,0] : ");
-           scanf("%d",&pl);
-           switch(pl){
-
-
-                case 1:
+        printf("\n\t\t*************************************");
+        printf("\n\t\t            %s Lost The Match ",T1);
+        printf("\n\t\t*************************************\n\n\n");
+        printf("\t\t---------------------------------------------------\n");
+        printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
+        printf("\t\t---------------------------------------------------\n");
+        int pl;
+        printf("\t\tChoice Your Options[1,2,0] : ");
+        scanf("%d",&pl);
+        switch(pl){
+            case 1:
                 system("cls");
                 main();
                 break;
 
-                case 2:
+            case 2:
                 system("cls");
                 Batting_over(balls);
                 break;
 
 
-                case 0:
+            case 0:
                 system("cls");
                 printf("\n\n\t\t----------------------------------------");
                 printf("\n\t\t|  Thank You Playing For Cricket Games | ");
@@ -626,37 +545,29 @@ void Batting_over(int balls){
 
 
 
-                default:
+            default:
                 system("cls");
                 printf("\n\t\t-----------------------------");
-                printf("\n\t\t You Entered Worng Choice...");
+                printf("\n\t\t You Entered Wrong Choice...");
                 printf("\n\t\t    Please Try Again ");
                 printf("\n\t\t-----------------------------\n\n");
                 system("pause");
                 main();
                 break;
-
-           }
-          break;
+        }
+        break;
     }
 }
-
-
-
-
-
 /* **************************************** */
 /*              Balling Part                */
 /* **************************************** */
-void Balling()
-{
+void Balling(){
     int n;
     printf("\n\t\t\t\t*******************************************************************\n");
     printf("\t\t\t\t*                                                                 *\n");
     printf("\t\t\t\t*                          Balling Challenge                      *\n");
     printf("\t\t\t\t*                                                                 *\n");
     printf("\t\t\t\t*******************************************************************\n\n");
-
     printf("\t\t\t\t-----------------------------------\n");
     printf("\t\t\t\t| [1]. PowerPlay                  |\n");
     printf("\t\t\t\t|---------------------------------|\n");
@@ -670,57 +581,56 @@ void Balling()
     printf("\t\t\t\t|---------------------------------|\n");
     printf("\t\t\t\t| [6]. Home       | [0]. Exit     |\n");
     printf("\t\t\t\t-----------------------------------\n");
-     printf("\n\t\t\t\tChoice Your Options[1,2,3,4,5,6,0] : ");
-     scanf("%d",&n);
+    printf("\n\t\t\t\tChoice Your Options[1,2,3,4,5,6,0] : ");
+    scanf("%d",&n);
        switch(n){
         case 1:
-        system("cls");
-        Balling_over1(6);
-        break;
+            system("cls");
+            Balling_over1(6);
+            break;
 
         case 2:
-        system("cls");
-        Balling_over1(12);
-        break;
+            system("cls");
+            Balling_over1(12);
+            break;
 
         case 3:
-        system("cls");
-        Balling_over1(18);
-        break;
+            system("cls");
+            Balling_over1(18);
+            break;
 
         case 4:
-        system("cls");
-        Balling_over1(30);
-        break;
+            system("cls");
+            Balling_over1(30);
+            break;
 
         case 5:
-        system("cls");
-        Start_Game();
-        break;
+            system("cls");
+            Start_Game();
+            break;
 
         case 6:
-        system("cls");
-        main();
-        break;
+            system("cls");
+            main();
+            break;
 
 
         case 0:
-        system("cls");
-        printf("\n\n\t\t----------------------------------------");
-        printf("\n\t\t|  Thank You Playing For Cricket Games | ");
-        printf("\n\t\t|--------------------------------------|");
-        getch();
-        break;
+            system("cls");
+            printf("\n\n\t\t----------------------------------------");
+            printf("\n\t\t|  Thank You Playing For Cricket Games | ");
+            printf("\n\t\t|--------------------------------------|");
+            getch();
+            break;
 
         default:
-        system("cls");
-        printf("\n\t\t\t-----------------------------");
-        printf("\n\t\t\t You Entered Worng Choice...");
-        printf("\n\t\t\t     Please Try Again ");
-        printf("\n\t\t\t-----------------------------\n\n");
-        Balling();
-        break;
-
+            system("cls");
+            printf("\n\t\t\t-----------------------------");
+            printf("\n\t\t\t You Entered Wrong Choice...");
+            printf("\n\t\t\t     Please Try Again ");
+            printf("\n\t\t\t-----------------------------\n\n");
+            Balling();
+            break;
     }
 }
 
@@ -747,16 +657,12 @@ void Balling_over1(int balls2){
     scanf("%s",&T1);
     printf("\n\t\tEnter Opposition Team name(Ex:-Abc) : ");
     scanf("%s",&T2);
-
     system("cls");
     printf("\n\t\t*******************************************************************\n");
     printf("\t\t*                                                                 *\n");
     printf("\t\t*                            %s VS %s                           *\n",T1,T2);
     printf("\t\t*                                                                 *\n");
     printf("\t\t*******************************************************************\n\n");
-
-
-
     srand(time(NULL));
     if(balls2<=6){
         r=rand()%10+12;
@@ -777,7 +683,6 @@ void Balling_over1(int balls2){
     printf("\n\t\t-------------------------------------------------------------------");
     printf("\n\t\t                     %s Need %d Runs in %d Over            ",T2,R,over1);
     printf("\n\t\t-------------------------------------------------------------------\n\n");
-
     for(i=1;i<=balls2;i++){
         printf("\n\t\t%d Ball (Through The Ball). . .\n\t\t",i);
         system("pause");
@@ -839,57 +744,49 @@ void Balling_over1(int balls2){
             r2=rand()%6;
         }
         printf("\n\t\t%d Ball : %d run",i,r2);
-
         b1=b1+r2;
         printf("\n\t\t%s Total %d runs\n\n",T2,b1);
-
         if(b1>=R){
-              printf("\n\n\n\n\n\n");
-              printf("\n\t\t***********************************************");
-              printf("\n\t\t                %s Lost The Match ",T1);
-              printf("\n\t\t**********************************************\n\n\n");
-               printf("\t\t---------------------------------------------------\n");
-          printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
-          printf("\t\t---------------------------------------------------\n");
-           int pl;
-           printf("\t\tChoice Your Options[1,2,0] : ");
-           scanf("%d",&pl);
-           switch(pl){
-
-
+            printf("\n\n\n\n\n\n");
+            printf("\n\t\t***********************************************");
+            printf("\n\t\t                %s Lost The Match ",T1);
+            printf("\n\t\t**********************************************\n\n\n");
+            printf("\t\t---------------------------------------------------\n");
+            printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
+            printf("\t\t---------------------------------------------------\n");
+            int pl;
+            printf("\t\tChoice Your Options[1,2,0] : ");
+            scanf("%d",&pl);
+            switch(pl){
                 case 1:
-                system("cls");
-                main();
-                break;
+                    system("cls");
+                    main();
+                    break;
 
                 case 2:
-                system("cls");
-                Balling_over1(balls2);
-                break;
-
+                    system("cls");
+                    Balling_over1(balls2);
+                    break;
 
                 case 0:
-                system("cls");
-                printf("\n\n\t\t----------------------------------------");
-                printf("\n\t\t|  Thank You Playing For Cricket Games | ");
-                printf("\n\t\t|--------------------------------------|");
-                getch();
-                break;
-
-
+                    system("cls");
+                    printf("\n\n\t\t----------------------------------------");
+                    printf("\n\t\t|  Thank You Playing For Cricket Games | ");
+                    printf("\n\t\t|--------------------------------------|");
+                    getch();
+                    break;
 
                 default:
-                system("cls");
-                printf("\n\t\t-----------------------------");
-                printf("\n\t\t You Entered Worng Choice...");
-                printf("\n\t\t    Please Try Again ");
-                printf("\n\t\t-----------------------------\n\n");
-                system("pause");
-                main();
-                break;
-
-           }
-          break;
+                    system("cls");
+                    printf("\n\t\t-----------------------------");
+                    printf("\n\t\t You Entered Wrong Choice...");
+                    printf("\n\t\t    Please Try Again ");
+                    printf("\n\t\t-----------------------------\n\n");
+                    system("pause");
+                    main();
+                    break;
+            }
+            break;
         }
         if(balls2==12){
             if(i==6){
@@ -903,20 +800,20 @@ void Balling_over1(int balls2){
         }
         if(balls2==18){
             if(i==6){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             1st over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t    %s need %d runs of 12 balls",T2,R-b1);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             1st over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t    %s need %d runs of 12 balls",T2,R-b1);
+                printf("\n\t\t*************************************\n\n");
             }else if(i==12){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             2nd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t    %s need %d runs of 6 balls",T2,R-b1);
-                  printf("\n\t\t*************************************\n\n");
-             }
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             2nd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t    %s need %d runs of 6 balls",T2,R-b1);
+                printf("\n\t\t*************************************\n\n");
+            }
         }
         if(balls2==30){
             if(i==6){
@@ -927,103 +824,83 @@ void Balling_over1(int balls2){
                 printf("\n\t\t    %s need %d runs of 24 balls",T2,R-b1);
                 printf("\n\t\t*************************************\n\n");
              }else if(i==12){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             2nd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t    %s need %d runs of 18 balls",T2,R-b1);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             2nd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t    %s need %d runs of 18 balls",T2,R-b1);
+                printf("\n\t\t*************************************\n\n");
              }else if(i==18){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             3rd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t    %s need %d runs of 12 balls",T2,R-b1);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             3rd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t    %s need %d runs of 12 balls",T2,R-b1);
+                printf("\n\t\t*************************************\n\n");
              }else if(i==24){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             4th over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t    %s need %d runs of 6 balls",T2,R-b1);;
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             4th over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t    %s need %d runs of 6 balls",T2,R-b1);;
+                printf("\n\t\t*************************************\n\n");
               }
          }
-
     }
     printf("\n\n\n\n\n\n");
     while(b1==r){
-          printf("\n\t\t*************************************");
-          printf("\n\t\t            Drawn The Match ");
-          printf("\n\t\t*************************************\n\n\n");
-          printf("\t\t---------------------------------------------------\n");
-          printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
-          printf("\t\t---------------------------------------------------\n");
-           int pl;
-           printf("\t\tChoice Your Options[1,2,0] : ");
-           scanf("%d",&pl);
-           switch(pl){
-
+            printf("\n\t\t*************************************");
+            printf("\n\t\t            Drawn The Match ");
+            printf("\n\t\t*************************************\n\n\n");
+            printf("\t\t---------------------------------------------------\n");
+            printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
+            printf("\t\t---------------------------------------------------\n");
+            int pl;
+            printf("\t\tChoice Your Options[1,2,0] : ");
+            scanf("%d",&pl);
+            switch(pl){
+                case 0:
+                    system("cls");
+                    printf("\n\n\t\t----------------------------------------");
+                    printf("\n\t\t|  Thank You Playing For Cricket Games | ");
+                    printf("\n\t\t|--------------------------------------|");
+                    getch();
+                    break;
 
                 case 1:
-                system("cls");
-                main();
-                break;
+                    system("cls");
+                    main();
+                    break;
 
                 case 2:
-                system("cls");
-                Balling_over1(balls2);
-                break;
-
-
-                case 0:
-                system("cls");
-                printf("\n\n\t\t----------------------------------------");
-                printf("\n\t\t|  Thank You Playing For Cricket Games | ");
-                printf("\n\t\t|--------------------------------------|");
-                getch();
-                break;
-
-
+                    system("cls");
+                    Balling_over1(balls2);
+                    break;
 
                 default:
-                system("cls");
-                printf("\n\t\t-----------------------------");
-                printf("\n\t\t You Entered Worng Choice...");
-                printf("\n\t\t    Please Try Again ");
-                printf("\n\t\t-----------------------------\n\n");
-                system("pause");
-                main();
-                break;
-
-           }
-          break;
+                    system("cls");
+                    printf("\n\t\t-----------------------------");
+                    printf("\n\t\t You Entered Wrong Choice...");
+                    printf("\n\t\t    Please Try Again ");
+                    printf("\n\t\t-----------------------------\n\n");
+                    system("pause");
+                    main();
+                    break;
+            }
+            break;
     }
     while(b1<R){
-          printf("\n\t\t*************************************");
-          printf("\n\t\t            %s Won The Match ",T1);
-          printf("\n\t\t*************************************\n\n\n");
-           printf("\t\t---------------------------------------------------\n");
-          printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
-          printf("\t\t---------------------------------------------------\n");
-           int pl;
-           printf("\t\tChoice Your Options[1,2,0] : ");
-           scanf("%d",&pl);
-           switch(pl){
-
-
-                case 1:
-                system("cls");
-                main();
-                break;
-
-                case 2:
-                system("cls");
-                Balling_over1(balls2);
-                break;
-
-
-                case 0:
+        printf("\n\t\t*************************************");
+        printf("\n\t\t            %s Won The Match ",T1);
+        printf("\n\t\t*************************************\n\n\n");
+        printf("\t\t---------------------------------------------------\n");
+        printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
+        printf("\t\t---------------------------------------------------\n");
+        int pl;
+        printf("\t\tChoice Your Options[1,2,0] : ");
+        scanf("%d",&pl);
+        switch(pl){
+            case 0:
                 system("cls");
                 printf("\n\n\t\t----------------------------------------");
                 printf("\n\t\t|  Thank You Playing For Cricket Games | ");
@@ -1031,37 +908,34 @@ void Balling_over1(int balls2){
                 getch();
                 break;
 
+            case 1:
+                system("cls");
+                main();
+                break;
 
-
-                default:
+            case 2:
+                system("cls");
+                Balling_over1(balls2);
+                break;
+            
+            default:
                 system("cls");
                 printf("\n\t\t-----------------------------");
-                printf("\n\t\t You Entered Worng Choice...");
+                printf("\n\t\t You Entered Wrong Choice...");
                 printf("\n\t\t    Please Try Again ");
                 printf("\n\t\t-----------------------------\n\n");
                 system("pause");
                 main();
                 break;
-
-           }
-          break;
+        }
+        break;
     }
-
 }
-
-
-
-
-
-
-
 /* **************************************** */
 /*                 Both Part                */
 /* **************************************** */
-void Both()
-{
+void Both(){
     int n;
-
     printf("\n\t\t\t\t*******************************************************************\n");
     printf("\t\t\t\t*                                                                 *\n");
     printf("\t\t\t\t*                              Both Play                          *\n");
@@ -1081,69 +955,57 @@ void Both()
     printf("\t\t\t\t|---------------------------------|\n");
     printf("\t\t\t\t| [6]. Home       | [0]. Exit     |\n");
     printf("\t\t\t\t-----------------------------------\n");
-     printf("\n\t\t\t\t Choice Your Options[1,2,3,4,5,6,0] : ");
-     scanf("%d",&n);
-       switch(n)
-
-    {
-
+    printf("\n\t\t\t\t Choice Your Options[1,2,3,4,5,6,0] : ");
+    scanf("%d",&n);
+    switch(n){
+        case 0:
+            system("cls");
+            printf("\n\n\t\t----------------------------------------");
+            printf("\n\t\t|  Thank You Playing For Cricket Games | ");
+            printf("\n\t\t|--------------------------------------|");
+            getch();
+            break;
 
         case 1:
-        system("cls");
-        Both_over1(6);
-        break;
+            system("cls");
+            Both_over1(6);
+            break;
 
         case 2:
-        system("cls");
-        Both_over1(12);
-        break;
+            system("cls");
+            Both_over1(12);
+            break;
 
         case 3:
-        system("cls");
-        Both_over1(18);
-        break;
+            system("cls");
+            Both_over1(18);
+            break;
 
         case 4:
-        system("cls");
-        Both_over1(30);
-        break;
+            system("cls");
+            Both_over1(30);
+            break;
 
         case 5:
-        system("cls");
-        Start_Game();
-        break;
+            system("cls");
+            Start_Game();
+            break;
 
         case 6:
-        system("cls");
-        main();
-        break;
+            system("cls");
+            main();
+            break;
 
-
-
-    case 0:
-    system("cls");
-        printf("\n\n\t\t----------------------------------------");
-        printf("\n\t\t|  Thank You Playing For Cricket Games | ");
-        printf("\n\t\t|--------------------------------------|");
-        getch();
-        break;
-
-
-
-    default:
-    system("cls");
-        printf("\n\t\t\t-----------------------------");
-        printf("\n\t\t\t You Entered Worng Choice...");
-        printf("\n\t\t\t     Please Try Again ");
-        printf("\n\t\t\t-----------------------------\n\n");
-        Both();
-        break;
-
+        default:
+            system("cls");
+            printf("\n\t\t\t-----------------------------");
+            printf("\n\t\t\t You Entered Wrong Choice...");
+            printf("\n\t\t\t     Please Try Again ");
+            printf("\n\t\t\t-----------------------------\n\n");
+            Both();
+            break;
     }
 }
-
-
-
 void Both_over1(int balls){
     int toss,toss2,choose,Target,Target3,i,j,k,over=0,over1=0,r,n,m,n1,n2=0,R,count=0,sum=0,b1=0,b2=0,b3=0,b4=0,b5,b6,s2,s3,s4,s5,s6;
     int a1,a2,a3,a4,a5,a6;
@@ -1258,32 +1120,30 @@ void Both_over1(int balls){
             r1=rand()%4;
         }
         printf("\n\t\t%d Ball : %d run",i,r1);
-
         b1=b1+r1;
         printf("\n\t\t'%s' Total %d runs\n\n",T1,b1);
-
         if(balls==12){
             if(i==6){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             1st over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             1st over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t*************************************\n\n");
             }
         }
         if(balls==18){
             if(i==6){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             1st over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             1st over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t*************************************\n\n");
             }else if(i==12){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             2nd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             2nd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t*************************************\n\n");
              }
         }
         if(balls==30){
@@ -1293,27 +1153,26 @@ void Both_over1(int balls){
                 printf("\n\t\t-------------------------------------");
                 printf("\n\t\t            Total %d runs",b1);
                 printf("\n\t\t*************************************\n\n");
-             }else if(i==12){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             2nd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t*************************************\n\n");
-             }else if(i==18){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             3rd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t*************************************\n\n");
-             }else if(i==24){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             4th over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b1);
-                  printf("\n\t\t*************************************\n\n");
-              }
-         }
-
+            }else if(i==12){
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             2nd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t*************************************\n\n");
+            }else if(i==18){
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             3rd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t*************************************\n\n");
+            }else if(i==24){
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             4th over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b1);
+                printf("\n\t\t*************************************\n\n");
+            }
+        }
     }
     over1=balls/6;
     Target=b1+1;
@@ -1322,22 +1181,17 @@ void Both_over1(int balls){
     printf("\n\t\t-------------------------------------------------------------------");
     printf("\n\t\t                     '%s' Need %d Runs in %d Over            ",T2,Target,over1);
     printf("\n\t\t-------------------------------------------------------------------\n\n");
-
     printf("\t\tInnings Break. . .\n\t\t");
     system("pause");
     system("cls");
-
     printf("\t\t*******************************************************************\n");
     printf("\t\t                      Now Your Team '%s' Balling               \n",T1);
     printf("\t\t                     '%s' Need %d Runs in %d Over            ",T2,Target,over1);
     printf("\n\t\t*******************************************************************\n\n");
-
-
     for(i=1;i<=balls;i++){
         printf("\n\t\t%d Ball (Through The Ball). . .\n\t\t",i);
         system("pause");
         a2=rand()%10;
-
         if(a2==0){
             r2=0;
         }
@@ -1394,86 +1248,78 @@ void Both_over1(int balls){
             r2=rand()%4;
         }
         printf("\n\t\t%d Ball : %d run",i,r2);
-
         b2=b2+r2;
         printf("\n\t\t '%s' Total %d runs\n\n",T2,b2);
-
         if(b2>=Target){
-              printf("\n\n\n\n\n\n");
-              printf("\n\t\t**********************************************");
-              printf("\n\t\t             '%s' Won The Match ",T2);
-              printf("\n\t\t----------------------------------------------");
-              printf("\n\t\t        Your team '%s' Lost The Match ",T1);
-              printf("\n\t\t**********************************************\n\n\n");
-               printf("\t\t---------------------------------------------------\n");
-          printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
-          printf("\t\t---------------------------------------------------\n");
-           int pl;
-           printf("\t\tChoice Your Options[1,2,0] : ");
-           scanf("%d",&pl);
-           switch(pl){
-
+            printf("\n\n\n\n\n\n");
+            printf("\n\t\t**********************************************");
+            printf("\n\t\t             '%s' Won The Match ",T2);
+            printf("\n\t\t----------------------------------------------");
+            printf("\n\t\t        Your team '%s' Lost The Match ",T1);
+            printf("\n\t\t**********************************************\n\n\n");
+            printf("\t\t---------------------------------------------------\n");
+            printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
+            printf("\t\t---------------------------------------------------\n");
+            int pl;
+            printf("\t\tChoice Your Options[1,2,0] : ");
+            scanf("%d",&pl);
+            switch(pl){
+                case 0:
+                    system("cls");
+                    printf("\n\n\t\t----------------------------------------");
+                    printf("\n\t\t|  Thank You Playing For Cricket Games | ");
+                    printf("\n\t\t|--------------------------------------|");
+                    getch();
+                    break;
 
                 case 1:
-                system("cls");
-                main();
-                break;
+                    system("cls");
+                    main();
+                    break;
 
                 case 2:
-                system("cls");
-                Both_over1(balls);
-                break;
-
-
-                case 0:
-                system("cls");
-                printf("\n\n\t\t----------------------------------------");
-                printf("\n\t\t|  Thank You Playing For Cricket Games | ");
-                printf("\n\t\t|--------------------------------------|");
-                getch();
-                break;
-
-
+                    system("cls");
+                    Both_over1(balls);
+                    break;
 
                 default:
-                system("cls");
-                printf("\n\t\t-----------------------------");
-                printf("\n\t\t You Entered Worng Choice...");
-                printf("\n\t\t    Please Try Again ");
-                printf("\n\t\t-----------------------------\n\n");
-                system("pause");
-                main();
-                break;
-
-           }
-          break;
+                    system("cls");
+                    printf("\n\t\t-----------------------------");
+                    printf("\n\t\t You Entered Wrong Choice...");
+                    printf("\n\t\t    Please Try Again ");
+                    printf("\n\t\t-----------------------------\n\n");
+                    system("pause");
+                    main();
+                    break;
+            }
+            break;
         }
         if(balls==12){
             if(i==6){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             1st over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b2);
-                  printf("\n\t\t    '%s' need %d runs of 6 balls",T2,Target-b2);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             1st over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b2);
+                printf("\n\t\t    '%s' need %d runs of 6 balls",T2,Target-b2);
+                printf("\n\t\t*************************************\n\n");
             }
         }
         if(balls==18){
             if(i==6){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             1st over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b2);
-                  printf("\n\t\t    '%s' need %d runs of 12 balls",T2,Target-b2);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             1st over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b2);
+                printf("\n\t\t    '%s' need %d runs of 12 balls",T2,Target-b2);
+                printf("\n\t\t*************************************\n\n");
             }else if(i==12){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             2nd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b2);
-                  printf("\n\t\t    '%s' need %d runs of 6 balls",T2,Target-b2);
-                  printf("\n\t\t*************************************\n\n");
-             }
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             2nd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b2);
+                printf("\n\t\t    '%s' need %d runs of 6 balls",T2,Target-b2);
+                printf("\n\t\t*************************************\n\n");
+            }
         }
         if(balls==30){
             if(i==6){
@@ -1483,57 +1329,43 @@ void Both_over1(int balls){
                 printf("\n\t\t            Total %d runs",b2);
                 printf("\n\t\t    '%s' need %d runs of 24 balls",T2,Target-b2);
                 printf("\n\t\t*************************************\n\n");
-             }else if(i==12){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             2nd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b2);
-                  printf("\n\t\t    '%s' need %d runs of 18 balls",T2,Target-b2);
-                  printf("\n\t\t*************************************\n\n");
-             }else if(i==18){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             3rd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b2);
-                  printf("\n\t\t    '%s' need %d runs of 12 balls",T2,Target-b2);
-                  printf("\n\t\t*************************************\n\n");
-             }else if(i==24){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             4th over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t            Total %d runs",b2);
-                  printf("\n\t\t    '%s' need %d runs of 6 balls",T2,Target-b2);
-                  printf("\n\t\t*************************************\n\n");
-              }
-         }
-
+            }else if(i==12){
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             2nd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b2);
+                printf("\n\t\t    '%s' need %d runs of 18 balls",T2,Target-b2);
+                printf("\n\t\t*************************************\n\n");
+            }else if(i==18){
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             3rd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b2);
+                printf("\n\t\t    '%s' need %d runs of 12 balls",T2,Target-b2);
+                printf("\n\t\t*************************************\n\n");
+            }else if(i==24){
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             4th over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t            Total %d runs",b2);
+                printf("\n\t\t    '%s' need %d runs of 6 balls",T2,Target-b2);
+                printf("\n\t\t*************************************\n\n");
+            }
+        }
     }
     printf("\n\n\n\n\n\n");
     while(b2==b1){
-          printf("\n\t\t*************************************");
-          printf("\n\t\t            Drawn The Match ");
-          printf("\n\t\t*************************************\n\n\n\n");
-           printf("\t\t---------------------------------------------------\n");
-          printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
-          printf("\t\t---------------------------------------------------\n");
-           int pl;
-           printf("\t\tChoice Your Options[1,2,0] : ");
-           scanf("%d",&pl);
-           switch(pl){
-
-
-                case 1:
-                system("cls");
-                main();
-                break;
-
-                case 2:
-                system("cls");
-                Both_over1(balls);
-                break;
-
-
-                case 0:
+        printf("\n\t\t*************************************");
+        printf("\n\t\t            Drawn The Match ");
+        printf("\n\t\t*************************************\n\n\n\n");
+        printf("\t\t---------------------------------------------------\n");
+        printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
+        printf("\t\t---------------------------------------------------\n");
+        int pl;
+        printf("\t\tChoice Your Options[1,2,0] : ");
+        scanf("%d",&pl);
+        switch(pl){
+            case 0:
                 system("cls");
                 printf("\n\n\t\t----------------------------------------");
                 printf("\n\t\t|  Thank You Playing For Cricket Games | ");
@@ -1541,46 +1373,40 @@ void Both_over1(int balls){
                 getch();
                 break;
 
+            case 1:
+                system("cls");
+                main();
+                break;
 
+            case 2:
+                system("cls");
+                Both_over1(balls);
+                break;
 
-                default:
+            default:
                 system("cls");
                 printf("\n\t\t-----------------------------");
-                printf("\n\t\t You Entered Worng Choice...");
+                printf("\n\t\t You Entered Wrong Choice...");
                 printf("\n\t\t    Please Try Again ");
                 printf("\n\t\t-----------------------------\n\n");
                 system("pause");
                 main();
                 break;
-
-           }
-          break;
+        }
+        break;
     }
     while(b2<b1){
-          printf("\n\t\t*************************************");
-          printf("\n\t\t       Your Team '%s' Won The Match ",T1);
-          printf("\n\t\t*************************************\n\n\n\n");
-           printf("\t\t---------------------------------------------------\n");
-          printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
-          printf("\t\t---------------------------------------------------\n");
-           int pl;
-           printf("\t\tChoice Your Options[1,2,0] : ");
-           scanf("%d",&pl);
-           switch(pl){
-
-
-                case 1:
-                system("cls");
-                main();
-                break;
-
-                case 2:
-                system("cls");
-                Both_over1(balls);
-                break;
-
-
-                case 0:
+        printf("\n\t\t*************************************");
+        printf("\n\t\t       Your Team '%s' Won The Match ",T1);
+        printf("\n\t\t*************************************\n\n\n\n");
+        printf("\t\t---------------------------------------------------\n");
+        printf("\t\t| [1]. Home  |  [2]. Play Again  |  [0]. Exit     |\n");
+        printf("\t\t---------------------------------------------------\n");
+        int pl;
+        printf("\t\tChoice Your Options[1,2,0] : ");
+        scanf("%d",&pl);
+        switch(pl){
+            case 0:
                 system("cls");
                 printf("\n\n\t\t----------------------------------------");
                 printf("\n\t\t|  Thank You Playing For Cricket Games | ");
@@ -1588,24 +1414,30 @@ void Both_over1(int balls){
                 getch();
                 break;
 
+            case 1:
+                system("cls");
+                main();
+                break;
 
+            case 2:
+                system("cls");
+                Both_over1(balls);
+                break;
 
-                default:
+            default:
                 system("cls");
                 printf("\n\t\t-----------------------------");
-                printf("\n\t\t You Entered Worng Choice...");
+                printf("\n\t\t You Entered Wrong Choice...");
                 printf("\n\t\t    Please Try Again ");
                 printf("\n\t\t-----------------------------\n\n");
                 system("pause");
                 main();
                 break;
-
-           }
-          break;
+        }
+        break;
     }
 
-    }
-
+}
     if(choose==2){
         printf("\t\t*******************************************************************\n");
         printf("\t\t                       Team '%s' Balling First               \n",T1);
@@ -1613,8 +1445,6 @@ void Both_over1(int balls){
         printf("\t\t*******************************************************************\n");
         printf("\t\t                            Start Match                            \n",T1);
         printf("\t\t*******************************************************************\n\n");
-
-
         for(n=1;n<=balls;n++){
         printf("\n\t\t%d Ball (Through The Ball). . .\n\t\t",n);
         system("pause");
@@ -1713,55 +1543,53 @@ void Both_over1(int balls){
                 printf("\n\t\t       Team '%s' Total %d runs",T2,b3);
                 printf("\n\t\t*************************************\n\n");
              }else if(n==12){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             2nd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t       Team '%s' Total %d runs",T2,b3);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             2nd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t       Team '%s' Total %d runs",T2,b3);
+                printf("\n\t\t*************************************\n\n");
              }else if(n==18){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             3rd over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t       Team '%s' Total %d runs",T2,b3);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             3rd over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t       Team '%s' Total %d runs",T2,b3);
+                printf("\n\t\t*************************************\n\n");
              }else if(n==24){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             4th over End            ");
-                  printf("\n\t\t-------------------------------------");
-                  printf("\n\t\t       Team '%s' Total %d runs",T2,b3);
-                  printf("\n\t\t*************************************\n\n");
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             4th over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t       Team '%s' Total %d runs",T2,b3);
+                printf("\n\t\t*************************************\n\n");
               }
               else if(n==30){
-                  printf("\n\t\t*************************************");
-                  printf("\n\t\t             5th over End            ");
-                  printf("\n\t\t-------------------------------------");
-                 printf("\n\t\t       Team '%s' Total %d runs",T2,b3);
-                  printf("\n\t\t*************************************\n\n");
-              }
-         }
-
-
+                printf("\n\t\t*************************************");
+                printf("\n\t\t             5th over End            ");
+                printf("\n\t\t-------------------------------------");
+                printf("\n\t\t       Team '%s' Total %d runs",T2,b3);
+                printf("\n\t\t*************************************\n\n");
+            }
+        }
     }
 
-                  printf("\n\t\t*****************************************");
-                  printf("\n\t\t              Innings Break              ");
-                  printf("\n\t\t*****************************************");
-                  printf("\n\t\t Start Match. . .\n\t\t ");
-                  system("pause");
+                printf("\n\t\t*****************************************");
+                printf("\n\t\t              Innings Break              ");
+                printf("\n\t\t*****************************************");
+                printf("\n\t\t Start Match. . .\n\t\t ");
+                system("pause");
 
-                  system("cls");
-                  Target3=b3+1;
-                  printf("\n\t\t*****************************************");
-                  printf("\n\t\t              Start Innings              ");
-                  printf("\n\t\t*****************************************");
-                  printf("\n\t\t     Team '%s' Total Score %d runs   ",T2,b3);
-                  printf("\n\t\t-----------------------------------------");
-                  printf("\n\t\t     Your Team '%s' Need %d runs",T1,Target3);
-                  printf("\n\t\t*****************************************\n\n\n");
-                  printf("\n\t\t Lets play. . .\n\t\t ");
-                  system("pause");
-                  printf("\n\n\n");
-                  system("cls");
+                system("cls");
+                Target3=b3+1;
+                printf("\n\t\t*****************************************");
+                printf("\n\t\t              Start Innings              ");
+                printf("\n\t\t*****************************************");
+                printf("\n\t\t     Team '%s' Total Score %d runs   ",T2,b3);
+                printf("\n\t\t-----------------------------------------");
+                printf("\n\t\t     Your Team '%s' Need %d runs",T1,Target3);
+                printf("\n\t\t*****************************************\n\n\n");
+                printf("\n\t\t Lets play. . .\n\t\t ");
+                system("pause");
+                printf("\n\n\n");
+                system("cls");
 
         for(m=1;m<=balls;m++){
         printf("\n\t\t%d Ball (Hit The Ball). . .\n\t\t",m);
@@ -1865,7 +1693,7 @@ void Both_over1(int balls){
                 default:
                 system("cls");
                 printf("\n\t\t-----------------------------");
-                printf("\n\t\t You Entered Worng Choice...");
+                printf("\n\t\t You Entered Wrong Choice...");
                 printf("\n\t\t    Please Try Again ");
                 printf("\n\t\t-----------------------------\n\n");
                 system("pause");
@@ -1976,7 +1804,7 @@ void Both_over1(int balls){
                 default:
                 system("cls");
                 printf("\n\t\t-----------------------------");
-                printf("\n\t\t You Entered Worng Choice...");
+                printf("\n\t\t You Entered Wrong Choice...");
                 printf("\n\t\t    Please Try Again ");
                 printf("\n\t\t-----------------------------\n\n");
                 system("pause");
@@ -2024,7 +1852,7 @@ void Both_over1(int balls){
                 default:
                 system("cls");
                 printf("\n\t\t-----------------------------");
-                printf("\n\t\t You Entered Worng Choice...");
+                printf("\n\t\t You Entered Wrong Choice...");
                 printf("\n\t\t    Please Try Again ");
                 printf("\n\t\t-----------------------------\n\n");
                 system("pause");
@@ -2034,13 +1862,7 @@ void Both_over1(int balls){
            }
           break;
     }
-
     }
-
-
-
-
-
 
 }
 
