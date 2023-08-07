@@ -278,9 +278,9 @@ void Batting_over(int balls){
     printf("\t\t|-------------------|------------------------|--------------------|--------------------|\n");
     printf("\t\t| [9].Sri           | [10].Win               | [9].Sri            | [10].Win           |\n");
     printf("\t\t========================================================================================\n");
-    printf("\n\t\tEnter Your Team Name(Ex:-Abc) : ");
+    printf("\n\t\tEnter Your Team Name(Ex:-Ban) : ");
     scanf("%s",&T1);
-    printf("\n\t\tEnter Opposition Team name(Ex:-Abc) : ");
+    printf("\n\t\tEnter Opposition Team name(Ex:-Ind) : ");
     scanf("%s",&T2);
     system("cls");
     printf("\n\t\t*******************************************************************\n");
@@ -653,9 +653,9 @@ void Balling_over1(int balls2){
     printf("\t\t|-------------------|------------------------|--------------------|--------------------|\n");
     printf("\t\t| [9].Sri           | [10].Win               | [9].Sri            | [10].Win           |\n");
     printf("\t\t========================================================================================\n");
-    printf("\n\t\tEnter Your Team Name(Ex:-Abc) : ");
+    printf("\n\t\tEnter Your Team Name(Ex:-Ban) : ");
     scanf("%s",&T1);
-    printf("\n\t\tEnter Opposition Team name(Ex:-Abc) : ");
+    printf("\n\t\tEnter Opposition Team name(Ex:-Ind) : ");
     scanf("%s",&T2);
     system("cls");
     printf("\n\t\t*******************************************************************\n");
