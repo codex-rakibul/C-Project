@@ -382,6 +382,14 @@ void Batting_over(int balls){
             printf("\t\tChoice Your Options[1,2,0] : ");
             scanf("%d",&pl);
             switch(pl){
+                case 0:
+                    system("cls");
+                    printf("\n\n\t\t----------------------------------------");
+                    printf("\n\t\t|  Thank You Playing For Cricket Games | ");
+                    printf("\n\t\t|--------------------------------------|");
+                    getch();
+                    break;
+
                 case 1:
                     system("cls");
                     main();
@@ -390,14 +398,6 @@ void Batting_over(int balls){
                 case 2:
                     system("cls");
                     Batting_over(balls);
-                    break;
-
-                case 0:
-                    system("cls");
-                    printf("\n\n\t\t----------------------------------------");
-                    printf("\n\t\t|  Thank You Playing For Cricket Games | ");
-                    printf("\n\t\t|--------------------------------------|");
-                    getch();
                     break;
 
                 default:
